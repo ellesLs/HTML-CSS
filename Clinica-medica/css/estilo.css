@@ -1,0 +1,237 @@
+/*General styles*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    color: #0000008c;
+    margin-bottom: 60px;
+}
+
+section {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.size-limit {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.content-adjust {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content-ajust h2, .content-ajust h3 {
+    margin: 0;
+}
+
+.logo-img {
+    width: 120px;
+}
+
+#sobre, #especialidades, #contato {
+    padding: 40px 20px 0;
+}
+
+/* End General styles */
+
+/*Header*/
+
+header {
+    background-color: #00cad1;
+    margin: 0 auto;
+}
+
+.top div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.links-top a {
+    text-decoration: none;
+    padding-left: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.links-top a:hover {
+    color: black;
+}
+
+/* End Header*/
+
+/* Main */
+
+.banner-img {
+    width: 100%;
+    height: 415px;
+    position: relative;
+    background-image: url(../img/recepcao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-banner-img {
+    height: 100%;
+    font-size: 22px;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+}
+
+.content-banner-img h1 {
+    font-weight: normal;
+}
+
+.content-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-sobre h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.content-sobre img {
+    width: 230px;
+}
+
+.box-specialties {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-specialties figure {
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    border-radius: 3px;
+}
+
+.box-specialties figure img {
+    width: 100%;
+}
+
+.box-specialties figure figcaption {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+.box-schedules {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.schedules-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #00cad1;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+
+}
+
+.contact span {
+    font-weight: bold;
+}
+
+/*End Main*/
+
+/*Footer*/ 
+
+footer {
+    text-align: center;
+    display: flex;
+    background-color: #0c6e71;
+    color: white;
+}
+
+
+footer div {
+    padding: 10px 0;
+}
+
+/*End Footer*/
+
+/*medias queries*/
+
+@media (max-width: 1024px) {
+    .banner-img {
+        height: 425px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .banner-img {
+        height: 310px;
+    }
+
+    .content-sobre img {
+        display: none;
+    }
+
+    .box-specialties {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-specialties figure {
+        width: calc(100% / 2 - 40px);
+        margin: 20px;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    .top div {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .links-top  {
+        width: 100%;
+        padding: 10px 0;
+        border-top: 2px solid #07c2cd;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .banner-img {
+        height: 200px;
+    }
+
+    .content-banner-img h1 {
+        font-size: 22px;
+    }
+
+    .box-specialties figure {
+        width: 100%;
+        margin: 20px;
+    }
+}

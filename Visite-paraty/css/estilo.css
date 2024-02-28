@@ -1,0 +1,181 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.limita-tamanho {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+/*Topo*/
+
+header {
+    width: 100%;
+}
+
+header div {
+    height: auto;
+    padding: 10px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+header img {
+    height: 70px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 5px;
+}
+
+
+/*Secao img*/
+
+.img-banner {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/bg-estacao.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.img-banner::before { /*Fazendo um Overlay*/
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-banner .img-titulo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 60px 20px;
+    z-index: 1;
+    color: white;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 35px
+}
+
+h1, h2 {
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+section {
+    margin: 0 auto;
+    padding: 50px 20px;
+ 
+}
+
+section p {
+    line-height: 32px;
+}
+
+.secao-destaque img:first-of-type {
+    width: 100%;
+}
+
+.secao-destaque p::first-letter {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Pontos turisticos*/
+
+.secao-pontos-turisticos {
+    background-color: #e9e9e9;
+    padding: 15px 0 50px 0;
+}
+
+.secao-pontos-turisticos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.secao-pontos-turisticos li {
+    display: flex;
+    align-items: center;
+    margin: 12px 0 0 0;
+}
+
+.secao-pontos-turisticos li::before {
+    content:"";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/seta.png");
+    margin: 0 6px 0 0;
+}
+
+/*Galeria*/
+
+.img-galeria {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+figure {
+    width: calc((100% / 3) - 6px);
+    margin: 3px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+figure img {
+    width: 100%;
+    opacity: 0.6;
+}
+
+figure img:hover {
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #f5c002;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

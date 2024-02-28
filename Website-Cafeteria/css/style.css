@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.size-limit {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top */
+
+#top {
+    position: fixed;
+    width: 100%;
+    background-color: #604829;
+    z-index: 1;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.logo nav a {
+    text-decoration: none;
+    color: #c6a875;
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 0.9em;
+    text-shadow: 4px 4px 2px black;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.logo nav a:hover {
+    color: #c5beb2;
+    /* font-size: 0.92em; */
+    transition: .4s ease;
+}
+
+/* -- */
+
+/* Banner Section */
+
+#banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/parallax-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#banner .banner-title {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner .banner-title h1 {
+    font-weight: 400;
+    font-size: 3.8em;
+    font-family: "Fraunces", serif;
+    color: white;
+}
+
+/* -- */
+
+/* Info section */
+
+.box-info-text {
+    padding: 40px 6px 60px 6px;
+}
+
+.box-info-text h2 {
+    text-align: center;
+    padding: 20px 0 30px 0;
+    color: #c4a47c;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.box-info-text p {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 35px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+
+.box-parallax-imgs {
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-parallax-img {
+    background-image: url('../assets/parallax-imagem1.jpg');
+}
+
+.second-parallax-img {
+    background-image: url('../assets/parallax-imagem2.jpg');
+}
+
+
+.first-parallax-img, .second-parallax-img {
+    font-family: "Fraunces", serif;
+}
+
+
+.box-parallax-imgs h3 {
+    font-style: italic;
+    font-size: 1.3em;
+    background-color: #604829;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+/* Contacts Section */
+
+#contacts {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-block: 1rem;
+   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.third-parallax-img {
+    background-image: url('../assets/parallax-imagem3.png');
+}
+
+.box-iframe-contacts {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-iframe-contacts iframe {
+    height: 300px;
+    /* min-width: 450px; */
+    width: 100%;
+    opacity: 0.9;
+
+}
+
+.box-iframe-contacts h2 {
+    background-color: #604829;
+    color: white;
+    font-size: 1.2em;
+    padding: 8px 60px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 5px;
+
+
+}
+
+.box-list-contacts {
+
+    margin: 35px 0 10px 0;
+    padding: 10px 30px;
+    background-color: #604829;
+   
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.box-list-contacts span {
+    font-size: 1.1em;
+    padding: 5px 0;
+    text-shadow: 0px 6px 8px black;
+    font-weight: bold;
+    color: white;
+
+    font-family: "Oswald", sans-serif;
+
+}
+
+/* -- */
+
+/* Schedules Section */
+
+#schedules {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../assets/cafeteria.jpg');
+    padding: 1rem;
+
+}
+
+.box-schedules {
+    color: white;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.box-schedules h2 {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 8px;
+    margin-bottom: 100px;
+}
+
+.box-schedules .box-list {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    padding-bottom: 2rem;
+
+}
+
+.box-list ul {
+    width: 100%;
+}
+
+.box-list ul li {
+    list-style: none;
+    font-size: 1.2em;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    /* position: relative; */
+}
+
+.box-list ul li span {
+    color: #cc9b5b;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.box-list ul li span, .box-list ul li p {
+    flex: 0 1 105px;
+    text-align: right;
+}
+
+.box-list ul li h3 {
+    font-size: 1em;
+    flex: 0 1 80px;
+}
+
+.box-list ul li p {
+    color: #acacac;
+    font-weight: bold;   
+}
+
+.box-list ul li div {
+    /* width: 100%; */
+    height: 1px;
+    flex: 1 1 auto;
+
+    /* position: absolute; */
+    /* top: 50%;
+    right: 60px;
+    left: 25px; */
+    margin: 0 auto;
+
+    background-color: #ACACAC;
+}
+
+/* Footer */
+
+#footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+
+    position: relative;
+}
+
+.box-footer {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 15px  0;
+    font-weight: bold;
+}
+
+.box-footer p {
+    padding: 5px 0;
+}
+
+.box-footer p span {
+    color: #cc9b5b;
+}
+
+.box-footer a {
+    background-image: url('../assets/seta-para-cima.png');
+    background-position: center;
+    background-size: cover;
+    background-color: #c4a47c;
+
+    border-radius: 4px;
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 70px;
+    right: 50px;
+    
+}

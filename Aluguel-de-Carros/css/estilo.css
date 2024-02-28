@@ -1,0 +1,173 @@
+/*Estilos Gerais*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-bottom: 30px;
+}
+
+.tamanho-limite {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+} 
+
+.padding-ajust {
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    margin: 0;
+    color: #fff;
+}
+
+/*Header*/
+
+.topo {
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+/*Main*/
+
+.banner {
+    background-image: url('../img/capa.jpg');
+    background-size: cover;
+    width: 100%;
+    min-height: 500px;
+}
+
+.semi-caixa-banner {
+    width: 100%;
+    height: calc(100% / 3);
+    background-color: rgba(0, 0, 0, 0.541);
+
+    display: flex;
+    align-items: center; 
+}
+
+.banner-titulo {
+    width: 100%;
+    color: white;
+    text-align: right;
+    padding: 50px 20px;
+}
+
+.secao-sobre {
+    margin-bottom: 50px;
+}
+
+.box-secao-sobre {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-secao-sobre figure {
+    width: calc(100% / 3 - 5px);
+    height: 180px;
+    margin: 2.5px;
+}
+
+.box-secao-sobre figure img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.secao-sobre-descricao p {
+    border-left: 1px solid;
+    padding-left: 10px;
+}
+
+.sub-titulo-contato {
+    width: 100%;
+    background-color: #d91f20;
+
+    padding: 50px 0;
+    text-align: center;
+}
+
+.sub-titulo-contato h3 {
+    width: 100%;
+    font-size: 36px;
+    background-color: #6c0000;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+form {
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campo input, .campo select {
+    margin: 12px 0;
+    height: 25px;
+}
+
+.form-cliente fieldset {
+    border: 2px solid gray;
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.botao-enviar-dados-cliente {
+    width: 100%;
+    background-color: #d91f20;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 10px;
+    border: none;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #f9f9f9;
+    color: red;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+@media(max-width: 815px)
+{
+    .box-secao-sobre {
+        flex-direction: column;
+    }
+
+    .box-secao-sobre figure {
+        width: 250px;
+        margin: 2px auto;
+    }
+
+    .box-secao-sobre figure img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,429 @@
+/*Estilos Gerais*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #eaeaea;
+  padding-bottom: 10px;
+}
+
+.limita-tamanho {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.padding-ajust {
+  padding: 0 20px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0 0 5px 0;
+}
+
+h3 {
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.titulos-ajust h2 {
+  font-size: 20px;
+}
+
+.titulos-ajust h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.titulos-ajust span {
+  font-weight: bold;
+}
+
+/*Cabeçalho*/
+
+header {
+  width: 100%;
+  height: 50px;
+}
+
+.box-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.box-logo p {
+  font-size: 24px;
+}
+
+.box-logo img {
+  height: 30px;
+}
+
+.box-logo img,
+.box-logo p {
+  padding: 0 10px 0 0;
+  color: #5e13d2;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/*Main*/
+
+/*secao formulario*/
+
+.secao-form {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/bahia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secao-form .limita-tamanho {
+  width: 100%;
+  margin: 40px auto;
+}
+
+.box-form {
+  background-color: white;
+  height: auto;
+}
+
+.form-topo {
+  width: 100%;
+  height: 30px;
+  background-color: #5e13d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px;
+}
+
+.form-topo img {
+  width: 20px;
+  margin-right: 5px;
+  transform: rotate(-45deg);
+}
+
+.box-form h2,
+.campo {
+  padding: 0 20px;
+}
+
+.campo {
+  padding-bottom: 10px;
+}
+
+.box-form h2 {
+  font-size: 22px;
+  margin: 30px auto 20px auto;
+}
+
+.campo label {
+  padding: 6px 0;
+}
+
+input,
+select {
+  padding: 0 5px;
+  height: 30px;
+}
+
+.campo-dados-pessoais,
+.campo-viagens,
+.viagem-datas,
+.campo-quartos {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-viagens,
+.campo-box-viagem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.viagem-datas {
+  width: calc(50% - 10px);
+}
+
+.box-campo-quartos {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-campo-quartos div {
+  display: flex;
+  align-items: center;
+  padding-right: 35px;
+  width: 120px;
+}
+
+.box-campo-quartos label {
+  padding: 0 0 0 8px;
+}
+
+.box-campo-quartos div input {
+  margin-left: 0;
+  width: 15px;
+}
+
+.box-form button {
+  background-color: #5e13d2;
+  margin: 10px 0 15px 0;
+  padding: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  height: 32px;
+  font-size: 16px;
+}
+
+/*Secao Ofertas*/
+
+.box-imagens {
+  width: 100%;
+  height: 375px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box-menores {
+  width: calc(50% - 10px);
+}
+
+.box-img-destaque {
+  position: relative;
+}
+
+.box-imgs-menores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.box-imgs-menores div {
+  width: calc((100% / 2) - 5px);
+  height: calc((100% / 2) - 10px);
+  position: relative;
+}
+
+.box-imgs-menores span,
+.box-img-destaque span {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.466);
+  width: 100%;
+  color: white;
+  padding: 5px;
+  bottom: 0;
+  left: 0;
+}
+
+.box-imagens img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Secao Natureza*/
+
+.box-imgs-grande {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box-imgs-grande img {
+  width: 100%;
+  height: 100%;
+}
+
+.box-natureza-imgs {
+  width: calc(50% - 10px);
+  height: 100%;
+}
+
+.box-natureza-imgs div {
+  background-color: white;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-natureza-imgs div h4 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.box-natureza-imgs div p {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+/*Main fim*/
+
+/*Footer*/
+
+footer {
+  background-color: #5e13d2;
+}
+
+footer h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.box-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box-footer-elementos {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-footer-elementos h3 {
+  font-size: 20px;
+}
+
+.box-footer-elementos div {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  color: white;
+  margin: 5px 0;
+}
+
+.box-footer-elementos img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/*Medias queries*/
+
+@media (max-width: 1100px) {
+  .limita-tamanho,
+  .secao-form .limita-tamanho {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-bottom: 10px;
+  }
+
+  section {
+    margin-bottom: 0;
+  }
+
+  .secao-form {
+    margin-bottom: 30px;
+  }
+
+  .box-form button {
+    width: 100%;
+  }
+
+  .titulos-ajust {
+    margin-bottom: 30px;
+  }
+
+  .box-imagens,
+  .box-imgs-grande {
+    height: auto;
+  }
+
+  .box-menores,
+  .box-imgs-menores div {
+    width: 100%;
+  }
+
+  .box-menores,
+  .box-imgs-menores div {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .box-menores img,
+  .box-imgs-menores div img {
+    height: 225px;
+  }
+
+  .box-imgs-menores span,
+  .box-img-destaque span {
+    bottom: 4px;
+  }
+
+  .box-natureza-imgs {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .box-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-footer-elementos {
+    width: 250px;
+  }
+
+  .box-footer span {
+    font-size: 15px;
+  }
+}
+
+.dev {
+  color: white;
+  padding-inline: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .campo-box-viagem {
+    flex-direction: column;
+  }
+
+  .viagem-datas {
+    width: 100%;
+  }
+
+  .box-campo-quartos {
+    flex-direction: column;
+  }
+
+  .box-campo-quartos div {
+    margin-bottom: 10px;
+  }
+}
